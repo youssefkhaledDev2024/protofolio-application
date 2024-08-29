@@ -1,0 +1,77 @@
+/* Ensure the modal dialog is centered vertically and horizontally */
+.modal-dialog {
+    position: fixed;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for exact centering */
+    width: 80%; /* Adjust width as needed */
+    max-width: 800px; /* Maximum width to avoid excessive stretching */
+    height: auto;
+    margin: 0;
+    overflow: hidden; /* Ensure modal content does not overflow */
+}
+
+/* Style the modal content */
+.modal-content {
+    border-radius: 8px; /* Apply border-radius as needed */
+    max-height: 80vh; /* Ensure the modal is scrollable if content exceeds height */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Style the modal header */
+.modal-header {
+    background:linear-gradient(90.21deg, rgba(255, 255, 255, 0.5) -5.91%, rgb(16, 27, 33) 111.58%);
+    border-bottom: 1px solid #ddd; /* Border at the bottom of the header */
+    padding: 1rem; /* Adjust padding as needed */
+    text-align: right; /* Align header text to the right for RTL */
+    position: relative; /* Relative positioning for the close button */
+    font-weight: bold;
+}
+
+/* Style the close button */
+.custom-close-button {
+    background: none;
+    border: none;
+    font-size: 1.5rem; /* Adjust size as needed */
+    color: #000; /* Adjust color as needed */
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 15px; /* Position close button on the left for RTL */
+    top: 8px; /* Adjust vertical position */
+    transition: color 0.3s ease;
+}
+
+.custom-close-button:hover {
+    color: #ff0000; /* Adjust hover color as needed */
+}
+
+/* Style the modal body */
+.modal-body {
+    padding: 2rem; /* Adjust padding as needed */
+    background: linear-gradient(90.21deg, rgba(255, 255, 255, 0.5) -5.91%, rgb(0, 0, 0) 111.58%);    color: #ffffff; /* Text color */
+    text-align: right; /* Align body text to the right for RTL */
+    overflow: hidden; /* Hide overflow to ensure scrolling is handled by modal-content */
+}
+
+/* Style the modal footer */
+.modal-footer {
+    background-color: #f7f7f7; /* Light gray background for footer */
+    border-top: 1px solid #ddd; /* Border at the top of the footer */
+    padding: 1rem; /* Adjust padding as needed */
+    text-align: right; /* Align footer text to the right for RTL */
+}
+
+/* Style the buttons in the modal footer */
+.modal-footer .btn {
+    border-radius: 0; /* Remove border-radius if needed */
+    margin-left: 0.5rem; /* Adjust margin between buttons for RTL */
+}
+
+/* Style the modal backdrop */
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.5); /* Slightly dark backdrop */
+    backdrop-filter: blur(5px); /* Blur the background */
+    z-index: 1040; /* Ensure the backdrop is behind the modal */
+}
