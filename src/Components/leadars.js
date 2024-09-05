@@ -10,7 +10,7 @@ export const Leadars = () => {
                     <Col>
                         <h2> اعرف قادتك </h2>
 
-                    <div style={{display: "flex", justifycontent: "space-around", backgroundcolor: "#f4f4f4", padding: "20px", borderradius: "8px"}}>
+                    <div className="cardContianer">
                         <Card
                             style={{
                                 width: '18rem'

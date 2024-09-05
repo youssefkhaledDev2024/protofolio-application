@@ -10,7 +10,7 @@ function ModalCard({ show, handleClose }) {
         onHide={handleClose}
         dialogClassName="modal-dialog"
         aria-labelledby="example-custom-modal-styling-title"
-        backdrop="static" // Prevent closing on backdrop click
+        // backdrop="static" // Prevent closing on backdrop click
       >
         <Modal.Header>
           <button className="custom-close-button" onClick={handleClose}>

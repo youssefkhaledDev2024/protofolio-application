@@ -1,0 +1,11 @@
+.footer {
+    background-color: #121212; /* Dark background for contrast */
+    color: #fff; /* White text */
+    text-align: center; /* Center align the text */
+    padding: 10px; /* Space around the text */
+    position: fixed; /* Fix the footer at the bottom */
+    bottom: 0;
+    width: 100%; /* Full width */
+    font-size: 14px; /* Adjust font size */
+  }
+  

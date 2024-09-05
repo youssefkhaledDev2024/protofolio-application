@@ -13,6 +13,8 @@ import { Projects } from './Components/Projects';
 import { About } from './Components/About';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { AboutPage } from './Components/AboutPage';
+import Info from './Components/Info';
+
  
 function App() {
   return (
@@ -26,17 +28,20 @@ function App() {
               <>
                <NavBar />
                 <Banner />
-                <Skills />
-                <Leadars />
-                <Contact />
-                <Sections />
-                <Projects />
-                <About />
+               <div id = "skill"> <Skills /></div>
+               <div id='leaders'> <Leadars />  </div>   
+                <div id="sections"><Sections /></div>
+                <div id='projects'><Projects /> </div>
+               <div id='about'> <About /></div>
+                <div id='contact'><Contact /></div>
+                <div id='info'> <Info/></div>
               </>
             }
           />
           <Route path="/about" element={<AboutPage />} />
+          
         </Routes>
+      
       </Router>
     </I18nextProvider>
   );

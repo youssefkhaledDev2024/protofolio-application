@@ -201,7 +201,7 @@ const Tabs = () => {
         {currentTab !== -1 && (
           <React.Fragment>
             {/* Always render "الافرع التابعه له" */}
-            <h3 style={{color:"red"}}>الافرع التابعه له</h3>
+            <h3 style={{color:"red" , padding:"10px"}}>الافرع التابعه له</h3>
             <div>
               {data[currentTab].bransh.split('\n').map((line, index) => (
                 <p key={index}>{line}</p>
@@ -211,7 +211,7 @@ const Tabs = () => {
             {/* Conditionally render "الوحدات التابعة له" if it exists */}
             {data[currentTab].units && (
               <React.Fragment>
-                <h3 style={{color:"red"}}>الوحدات التابعة له</h3>
+                <h3 style={{color:"red" , padding:"10px"}}>الوحدات التابعة له</h3>
                 <div>
                   {data[currentTab].units.split('\n').map((line, index) => (
                     <p key={index}>{line}</p>

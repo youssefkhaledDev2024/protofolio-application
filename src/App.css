@@ -97,8 +97,8 @@ nav.navbar.scrolled {
   padding: 0px 0;
   background-color: #121212;
 }
-nav.navbar a.navbar-brand {
-    width: 9%;
+.navbar-brand {
+  margin: 10px;
 }
 .navbar-nav {
   display: flex;
@@ -448,15 +448,25 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   text-align: center;
 }
-
-.leadersCard{
-  flex: 1; /* Each table container takes up equal space */
-  margin: 0 10px; /* Add some spacing between table containers */
+.cardContianer{
+  display: flex;
+  flex-wrap: wrap; /* Allows the items to wrap onto multiple lines */
+  gap: 30px;
+  justify-content: space-around;
+  /* background-color: #f4f4f4; */
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visual separation */
+}
+.leadersCard{
+  /* flex: 1; 
+  margin: 0 10px; 
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
   overflow: auto;
-  align-items: center;
+  align-items: center; */
+  flex: 1 1 calc(50% - 30px); /* Each card takes up 50% of the width minus the gap */
+  box-sizing: border-box;
 }
 
 /* sections */
@@ -604,7 +614,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   cursor: pointer;
 }
 .Aboutcard{
-  background-color: #38262640;
+  background-color: #c2bfc940;
   margin: 36px;
   padding: 31px;
   border-radius: 18px;
