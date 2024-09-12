@@ -1,5 +1,6 @@
 import { Container, Row, Col, Nav, Tab, NavLink, NavItem, Button, TabContent, TabPane, CardBody, Card, CardTitle, CardText, CardSubtitle , CardLink , CardImg } from "react-bootstrap";
 import colorSharp2 from "../Assets/Pics/color-sharp2.png";
+import person from "../Assets/Pics/person.png";
 
 export const Leadars = () => {
 
@@ -20,7 +21,7 @@ export const Leadars = () => {
              
                             <img
                                 alt="Card cap"
-                                src="https://picsum.photos/318/180"
+                                src={person}
                                 width="100%"
                             />
                             <CardBody>
@@ -42,7 +43,7 @@ export const Leadars = () => {
 
                             <img
                                 alt="Card cap"
-                                src="https://picsum.photos/318/180"
+                                src={person}
                                 width="100%"
                             />
                             <CardBody>
@@ -66,7 +67,7 @@ export const Leadars = () => {
                 
                             <img
                                 alt="Card cap"
-                                src="https://picsum.photos/318/180"
+                                src={person}
                                 width="100%"
                             />
                             <CardBody>
@@ -89,7 +90,7 @@ export const Leadars = () => {
                        
                             <img
                                 alt="Card cap"
-                                src="https://picsum.photos/318/180"
+                                src={person}
                                 width="100%"
                             />
                             <CardBody>

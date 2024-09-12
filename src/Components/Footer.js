@@ -1,10 +1,10 @@
 import React from 'react';
-import './footer.css'; // Adjust the import path as needed
+import '../footer.css'; // Adjust the import path as needed
 
 const Footer = () => {
   return (
     <footer className='footer'>
-      <p>All rights reserved to MMC 2024</p>
+      <p>Build v1.0 Copyright Developing Team @MMC. ALL rights reserved</p>
     </footer>
   );
 };

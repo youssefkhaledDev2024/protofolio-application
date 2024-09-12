@@ -8,7 +8,7 @@ export const Info = () => {
     const navigate = useNavigate();
 
     const handleClick = () => {
-        navigate('/about'); // Redirects to the /details route
+        navigate('/Use'); // Redirects to the /details route
       };
 
 

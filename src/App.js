@@ -14,6 +14,8 @@ import { About } from './Components/About';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { AboutPage } from './Components/AboutPage';
 import Info from './Components/Info';
+import { UsePage } from './Components/UsePage';
+import Footer from './Components/Footer';
 
  
 function App() {
@@ -39,9 +41,9 @@ function App() {
             }
           />
           <Route path="/about" element={<AboutPage />} />
-          
+          <Route path="/Use" element={<UsePage />} />
         </Routes>
-      
+        <Footer/>
       </Router>
     </I18nextProvider>
   );

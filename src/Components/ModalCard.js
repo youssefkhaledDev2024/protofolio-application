@@ -10,13 +10,12 @@ function ModalCard({ show, handleClose }) {
         onHide={handleClose}
         dialogClassName="modal-dialog"
         aria-labelledby="example-custom-modal-styling-title"
-        // backdrop="static" // Prevent closing on backdrop click
       >
-        <Modal.Header>
+        <Modal.Header dir="rtl"> {/* Ensure RTL direction */}
           <button className="custom-close-button" onClick={handleClose}>
             ×
           </button>
-          <Modal.Title id="example-custom-modal-styling-title">
+          <Modal.Title id="example-custom-modal-styling-title" className="text-end"> {/* Align title to the right */}
             قسم إنتاج و تطوير و صيانه البرمجيات
           </Modal.Title>
         </Modal.Header>
@@ -34,7 +33,6 @@ function ModalCard({ show, handleClose }) {
             <br />
             المتابيعه الدوريه للتطبيقات -
             <br />
-           
           </p>
         </Modal.Body>
       </Modal>

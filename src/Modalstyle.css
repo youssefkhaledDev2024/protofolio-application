@@ -75,3 +75,8 @@
     backdrop-filter: blur(5px); /* Blur the background */
     z-index: 1040; /* Ensure the backdrop is behind the modal */
 }
+.modal.show .modal-dialog {
+    transform: perspective(10px);
+    margin-left: -236px;
+    margin-top: -103px;
+}

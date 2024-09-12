@@ -76,6 +76,16 @@ input:focus, textarea:focus, select:focus {
 	}
 }
 
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1349px !important;
+  }
+}
+
 p.success {
 	color: green;
 }
@@ -482,42 +492,60 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 45px;
   font-weight: 700;
   text-align: center;
+  color: white;
 }
 
-.SectionsCard{
-  flex: 1; /* Each table container takes up equal space */
-  margin: 29px 39px;
+.carousel-wrapper {
+  /* ckbaground-color: #f4f4f4; */
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 8px 19px rgba(170, 170, 170, 0.1);  overflow: auto;
-  align-items: center;
 }
 
-.SectionTittle{
+.SectionsCard {
+  background-color: #151515 !important;
+  color: white !important;
+  margin: 0 15px; /* Space between cards */
+  border-radius: 8px;
+  box-shadow: 0 8px 19px rgba(170, 170, 170, 0.1);
+  overflow: hidden; /* Ensures no content spills out */
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Ensures cards have a consistent height */
+}
+
+.SectionsCard img {
+  width: 100%;
+  height: 188px;
+  object-fit: cover;
+}
+
+.SectionTittle {
   margin: 8px;
-  text-align: center;
   font-weight: bold;
+  font-size: 10px; /* Font size set to 10px */
+  text-align: center;
 }
 
 .centered-button {
   display: flex;
   justify-content: center;
+  margin-top: auto;
 }
+
 
 /* Style the button */
-.custom-button {
-  border-radius: 25px; /* Adjust the value for the desired roundness */
-  background:linear-gradient(90.21deg, rgba(255, 255, 255, 0.5) -5.91%, rgb(16, 27, 33) 111.58%);
-  color: white; /* Button text color */
-  padding: 16px 55px;
-    border: none; /* Remove default border */
-  transition: background 0.3s ease;
-  margin: 10px; /* Smooth transition on hover */
+.btn-custom {
+    background:linear-gradient(90.21deg, rgba(255, 255, 255, 0.5) -5.91%, rgb(16, 27, 33) 111.58%) !important;
+    border-color: rgb(255, 255, 255) !important;
+    color: white !important;
+    padding: 10px 46px !important;
+    margin: 10px !important;
+    border-radius: 23px !important;
+    font-size: 19px !important;
 }
-
-/* Optional: Add hover effect */
-.custom-button:hover {
-  background: linear-gradient(135deg, #a9a9a9, #808080); /* Darken the gradient on hover */
+.btn-custom:hover {
+  background-color: #003366; /* Darker navy for hover effect */
+  border-color: #003366; /* Darker navy border color on hover */
 }
 /* currebt project */
 .currentProject {
@@ -581,6 +609,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 45px;
   font-weight: 700;
   text-align: center;
+  margin-top: 48px;
 }
 
 .AboutContant {
@@ -613,12 +642,43 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   cursor: pointer;
 }
-.Aboutcard{
+
+.Aboutcard {
   background-color: #c2bfc940;
-  margin: 36px;
+  margin: 50px;
   padding: 31px;
   border-radius: 18px;
+  position: relative;
 }
+
+.Aboutcard img {
+  width: 135px;
+  height: 131px;
+  margin-top: -115px;
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ItemsImage{
+  width: 139px;
+    height: 131px;
+    margin-top: 166px;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Aboutcard h1{
+ font-size: 20px;
+ font-weight: bold;
+}
+
+
+
+
 .AboutTittle{
   margin: 10px;
   font-size: 25px;
@@ -629,6 +689,22 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 20px;
   /* font-weight: bold; */
 }
+
+.AboutDescriptionWithimg{
+  display: flex;
+  justify-content: space-around;
+}
+
+.AboutDescriptionWithimg img{
+  order: 2;
+  height: 178px;
+  width: 500px;
+  margin-bottom: 51px;
+  padding: 22px;
+  margin-top: -30px;
+}
+
+
 .TabsCard{
   background-color: #38262640;
   margin: 36px;
@@ -638,6 +714,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /* end of about css */
+
+/* start of use page */
+.Use{ 
+  padding: 80px 0;
+  margin: 10px;
+  position: relative;
+  background: #151515;
+  border-radius: 64px;
+}
+
+
+
+
+/* end of use page */
 
 
 .App {

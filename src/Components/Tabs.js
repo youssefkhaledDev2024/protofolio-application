@@ -204,7 +204,7 @@ const Tabs = () => {
             <h3 style={{color:"red" , padding:"10px"}}>الافرع التابعه له</h3>
             <div>
               {data[currentTab].bransh.split('\n').map((line, index) => (
-                <p key={index}>{line}</p>
+                <p style={{color:"black"}} key={index}>{line}</p>
               ))}
             </div>
             
@@ -214,7 +214,7 @@ const Tabs = () => {
                 <h3 style={{color:"red" , padding:"10px"}}>الوحدات التابعة له</h3>
                 <div>
                   {data[currentTab].units.split('\n').map((line, index) => (
-                    <p key={index}>{line}</p>
+                    <p style={{color:"black"}} key={index}>{line}</p>
                   ))}
                 </div>
               </React.Fragment>
