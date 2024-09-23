@@ -26,13 +26,19 @@ export const Info = () => {
                         }}>
                             <div className="AboutContant">
                                 <img src={army} alt="img"></img>
-                                <button  onClick={handleClick}>اضغط هنا </button>
+
+                                <div style={{ flexDirection:"column"}}>
+                                <p>
+                                هذا الدليل يهدف إلى تقديم إرشادات شاملة حول كيفية استخدام منظومات مركز التأمين الفني . تم تصميم هذه المنظومات لتلبية احتياجات ، وهي أداة قوية تساعد في تحسين العمليات، تبسيط الإجراءات، وتعزيز الكفاءة.
+                                </p>
+                                <button  onClick={handleClick}>اضغط هنا  </button>      
+                                </div>   
                             </div>
                         </div>
                     </Col>
                 </Row>
             </Container>
-            <img src={colorSharp2} className="background-image-right" alt="img"></img>
+            {/* <img src={colorSharp2} className="background-image-right" alt="img"></img> */}
         </section>
     )
 }

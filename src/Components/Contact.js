@@ -4,7 +4,7 @@ import colorSharp2 from "../Assets/Pics/color-sharp2.png";
 export const Contact = () => {
 
     return (
-        <section className="project" id="project" dir="rtl">
+        <section className="project" id="project" dir="rtl" style={{marginBottom : "43px"}}>
             <Container>
                 <Row>
                     <Col>
@@ -15,12 +15,13 @@ export const Contact = () => {
                             backgroundcolor: "#f4f4f4", /* Background color for the container */
                             padding: "20px",
                             borderradius: "8px"
+                            
                         }}>
                         <div className="contacts">
-                            <h1 className="tittle">للاتصال بالمركز</h1>
+                            {/* <h1 className="tittle">للاتصال بالمركز</h1> */}
                             <table >
                                 <tbody>
-                                    <th>مكتب قائد المركز - </th>
+                                    <th>مكتب قائد المركز  </th>
                                     <tr>
                                         <td>
                                             سنترال :
@@ -110,7 +111,7 @@ export const Contact = () => {
                                 </tbody>
                             </table>
                         </div>
-                        <div className="contacts">
+                        {/* <div className="contacts">
                             <h1 className="tittle">ارقام هواتف الشبكه داخل المركز </h1>
                             <table >
                                 <tbody>
@@ -277,9 +278,9 @@ export const Contact = () => {
                                     </tr>
                                 </tbody>
                             </table>
-                        </div>
+                        </div> */}
 
-                        <div className="contacts">
+                        {/* <div className="contacts">
                             <h1 className="tittle">ارقام هواتف الشبكه للوحدات العامله بمنظومه MMC </h1>
                             <table >
                                 <tbody>
@@ -314,13 +315,13 @@ export const Contact = () => {
                        
                                 </tbody>
                             </table>
-                            </div>
+                            </div> */}
 
                         </div>       
                     </Col>
                 </Row>
             </Container>
-            <img src={colorSharp2} className="background-image-right" alt="img"></img>
+            {/* <img src={colorSharp2} className="background-image-right" alt="img"></img> */}
         </section>
     )
 }

@@ -51,7 +51,7 @@ export const Projects = () => {
                     </Col>
                 </Row>
             </Container>
-            <img src={colorSharp2} className="background-image-right" alt="img"></img>
+            {/* <img src={colorSharp2} className="background-image-right" alt="img"></img> */}
             <ModalCard show={showModal} handleClose={handleClose} />
         </section>
     )

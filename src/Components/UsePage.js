@@ -1,15 +1,23 @@
 import { Container, Row, Col } from "react-bootstrap";
 import colorSharp2 from "../Assets/Pics/color-sharp2.png";
 import Card from "./Card";
+import { useNavigate } from "react-router-dom";
 
 
 
 
 export const UsePage = () => {
 
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+      navigate('/'); // Redirects to the /details route
+    };
+
+
 
     return (
-      <section className="Use" id="Use" dir="rtl">
+      <section className="Use" id="Use" dir="rtl"  style={{marginBottom : "43px"}}>
         <Container>
           <Row>
             <Col>
@@ -18,7 +26,6 @@ export const UsePage = () => {
                 style={{
                     display: "flex",
                     flexWrap: "wrap", // Wraps items to the next row when no space
-                    justifyContent: "space-between", // Space out evenly between items
                     padding: "20px", // Padding inside the container
                     borderRadius: "8px", //
                   
@@ -97,11 +104,9 @@ export const UsePage = () => {
             </Col>
           </Row>
         </Container>
-        <img
-          src={colorSharp2}
-          className="background-image-right"
-          alt="img"
-        ></img>
+        <div className="BackButton">
+          <button onClick={handleClick}>رجوع</button>
+        </div>
       </section>
     );
 }

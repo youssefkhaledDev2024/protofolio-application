@@ -26,13 +26,19 @@ export const About = () => {
                         }}>
                             <div className="AboutContant">
                                 <img src={army} alt="img"></img>
-                                <button  onClick={handleClick}>اضغط لقراءه التفاصيل</button>
+                                <div style={{flexDirection:"column"}}>
+                                <p>
+                                    تعتبر منظومة الإمداد الألي و السيطره علي المخزون بالقوات المسلحة نظام متكامل للسيطره علي الأتي :
+                                    دوره الإمداد بأصناف الاإحتياجات الفنية للقوات المسلحة بدءا من الاإحتياجات الفنيه و تدبيرها ثم وصول الأصناف الي موانئ الوصول و استقبالها حتي تمام الوصول الي مستودعات الإضافه و الصرف منها و مراقبه المخزون و السيطرة عليه حتي تكهينه او اعدامه او الإستغناء عنة
+                                </p>
+                                <button onClick={handleClick}>اضغط لقراءه المزيد</button>
+                                </div>       
                             </div>
                         </div>
                     </Col>
                 </Row>
             </Container>
-            <img src={colorSharp2} className="background-image-right" alt="img"></img>
+            {/* <img src={colorSharp2} className="background-image-right" alt="img"></img> */}
         </section>
     )
 }

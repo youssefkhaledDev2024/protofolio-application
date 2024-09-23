@@ -1,20 +1,27 @@
 import { Container, Row, Col } from "react-bootstrap";
 import colorSharp2 from "../Assets/Pics/color-sharp2.png";
 import army from "../Assets/Pics/armyLogo.png";
-import maps from "../Assets/Pics/maps.jpg";
+import maps2 from "../Assets/Pics/maps2.jpg";
 import Tabs from "./Tabs";
 import cmmi_1 from "../Assets/Pics/cmmi1.png";
 import cmmi_2 from "../Assets/Pics/cmmi2.png";
 import cmmi_3 from "../Assets/Pics/cmmi3.png";
 import cmmi_4 from "../Assets/Pics/CMMI-SVC (2).png";
 import nozm from "../Assets/Pics/nozm.png"
+import { useNavigate } from "react-router-dom";
 
 
 export const AboutPage = () => {
 
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+      navigate('/'); // Redirects to the /details route
+    };
+
 
     return (
-      <section className="About" id="About" dir="rtl">
+      <section className="About" id="About" dir="rtl"  style={{marginBottom : "43px"}}>
         <Container>
           <Row>
             <Col>
@@ -148,7 +155,7 @@ export const AboutPage = () => {
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "space-around",
-                  backgroundImage: `url(${maps})`,
+                  backgroundImage: `url(${maps2})`,
                   backgroundSize: "cover", // Ensure the image covers the entire background
                   backgroundPosition: "center",
                   padding: "20px",
@@ -244,16 +251,15 @@ export const AboutPage = () => {
  
                     </p>
                   </div>
+
                 </div>
               </div>
             </Col>
           </Row>
         </Container>
-        <img
-          src={colorSharp2}
-          className="background-image-right"
-          alt="img"
-        ></img>
+        <div className="BackButton">
+          <button onClick={handleClick}>رجوع</button>
+        </div>
       </section>
     );
 }

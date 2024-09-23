@@ -16,6 +16,7 @@ import { AboutPage } from './Components/AboutPage';
 import Info from './Components/Info';
 import { UsePage } from './Components/UsePage';
 import Footer from './Components/Footer';
+import Systems from './Components/system';
 
  
 function App() {
@@ -30,13 +31,14 @@ function App() {
               <>
                <NavBar />
                 <Banner />
-               <div id = "skill"> <Skills /></div>
-               <div id='leaders'> <Leadars />  </div>   
+                <Systems/>
+                <div id="skill"> <Skills /></div>
                 <div id="sections"><Sections /></div>
+                <div id='info'> <Info /></div>
                 <div id='projects'><Projects /> </div>
-               <div id='about'> <About /></div>
+                <div id='leaders'> <Leadars />  </div>
+                <div id='about'> <About /></div>
                 <div id='contact'><Contact /></div>
-                <div id='info'> <Info/></div>
               </>
             }
           />

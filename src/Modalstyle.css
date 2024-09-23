@@ -20,7 +20,7 @@
 
 /* Style the modal header */
 .modal-header {
-    background:linear-gradient(90.21deg, rgba(255, 255, 255, 0.5) -5.91%, rgb(16, 27, 33) 111.58%);
+    background:var( --background-color);
     border-bottom: 1px solid #ddd; /* Border at the bottom of the header */
     padding: 1rem; /* Adjust padding as needed */
     text-align: right; /* Align header text to the right for RTL */
@@ -50,7 +50,7 @@
 /* Style the modal body */
 .modal-body {
     padding: 2rem; /* Adjust padding as needed */
-    background: linear-gradient(90.21deg, rgba(255, 255, 255, 0.5) -5.91%, rgb(0, 0, 0) 111.58%);    color: #ffffff; /* Text color */
+    background: var( --card-background-color);    color: var(--text-color); /* Text color */
     text-align: right; /* Align body text to the right for RTL */
     overflow: hidden; /* Hide overflow to ensure scrolling is handled by modal-content */
 }

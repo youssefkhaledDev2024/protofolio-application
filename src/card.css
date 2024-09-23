@@ -14,7 +14,7 @@ body {
 }
 
 .cards {
-  background: #fff;
+  background: var(--background-color);
   width: fit-content;
   border-radius: 11px;
   cursor: pointer;
@@ -23,7 +23,7 @@ body {
   margin: 19px;
   flex-basis: 30%;
   &:hover {
-    box-shadow: 0 10px 20px 1px gray;
+    box-shadow: var(--background-color);
     transform: scale(1.03);
   }
   img {
@@ -42,22 +42,23 @@ body {
     display: flex;
     width: $card-width;
     align-items: center;
-    justify-content: space-between;
     padding: 10px 3px;
     color: black;
+    justify-content: space-between;
     h2 {
       font-weight: 400;
-      margin-left: 10px;
-      font-size: 20px;
+      margin-bottom: 56px;
+      font-size: 12px;
     }
 
     p {
-      background: #b2ebf2;
+      background: var( --button-background-color);
       margin-right: 10px;
       padding: 7px;
       border-radius: 5px;
       width: 100px;
       text-align: center;
+      color: var(--text-color2);
     }
   }
 }
