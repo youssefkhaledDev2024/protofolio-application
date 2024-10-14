@@ -30,6 +30,7 @@ body {
     width: 100%;
     height: 200px;
     border-top-left-radius: 11px;
+    
     user-drag: none;
     user-select: none;
     -moz-user-select: none;
@@ -48,17 +49,19 @@ body {
     h2 {
       font-weight: 400;
       margin-bottom: 56px;
-      font-size: 12px;
+      font-size: 13px;
     }
 
     p {
-      background: var( --button-background-color);
-      margin-right: 10px;
-      padding: 7px;
+      background: var(--button-background-color);
+      margin-right: 18px;
+      padding: -24px;
       border-radius: 5px;
-      width: 100px;
+      width: 289px;
       text-align: center;
       color: var(--text-color2);
+      margin-top: 24px;
+      font-size: 13px;
     }
   }
 }

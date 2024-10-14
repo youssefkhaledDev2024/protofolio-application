@@ -13,7 +13,7 @@ export const About = () => {
 
 
     return (
-        <section className="About" id="About" dir="rtl">
+        <section className="AboutSm" id="AboutSm" dir="rtl">
             <Container>
                 <Row>
                     <Col>

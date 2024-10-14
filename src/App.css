@@ -322,12 +322,14 @@ input:checked + .slider:before {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
+  height: 400px;
   background-image: url('../src/Assets/Pics/storehouse4.jpg');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
   direction: rtl; /* Ensure the entire banner follows RTL direction */
   text-align: right; /* Align text to the right */
+  border-radius: 34px;
 }
 
 .banner-content {
@@ -339,11 +341,16 @@ input:checked + .slider:before {
 .text-content {
   flex: 1; /* Allow text to take up available space */
   text-align: right; /* Align the text to the right */
+  margin-top: -101px;
+  margin-right: -97px
 }
 
 .image-content {
   flex-shrink: 0; /* Prevent the image from shrinking */
   margin-left: 20px; /* Add some space between the text and the image */
+  margin-top: -281px;
+  height: 10px;
+  width: 211px;
 }
 
 .banner .tagline {
@@ -403,7 +410,7 @@ input:checked + .slider:before {
 /* Skills Section */
 
 .skill {
-  padding: 0 0 50px 0;
+  padding: 185px 0 50px 0;
   position: relative;
 }
 .skill-bx {
@@ -445,9 +452,27 @@ input:checked + .slider:before {
 /************ Projects Css ************/
 .project {
   padding: 80px 0;
+  margin: 41px;
+  margin-top: -26px;
+
   position: relative;
   background: var(--card-background-color);
   border-radius: 64px;
+}
+.fullproject{
+  padding: 80px 0;
+  margin: 41px;
+  margin-top: 117px;
+
+  position: relative;
+  background: var(--card-background-color);
+  border-radius: 64px;
+}
+.fullproject h2{
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--text-color);
 }
 
 .project h2 {
@@ -685,8 +710,25 @@ input:checked + .slider:before {
 /* end of current project */
 
 /* about css */
+.AboutSm{
+  padding: 80px 0;
+  margin: 41px;
+  margin-top: -62px;
+  position: relative;
+  background: var(--card-background-color);
+  border-radius: 64px;
+}
+
+.AboutSm h2 {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 48px;
+  color: var(--text-color);
+}
 .About{  padding: 80px 0;
-  margin: 10px;
+  margin: 41px;
+  margin-top: 100px;
   position: relative;
   background: var(--card-background-color);
   border-radius: 64px;
@@ -823,14 +865,15 @@ input:checked + .slider:before {
 /* start of use page */
 .Use{ 
   padding: 80px 0;
-  margin: 10px;
+  margin: 41px;
+ margin-top: 100px;
   position: relative;
   background: var(--card-background-color);
   border-radius: 64px;
 }
 
 .Use h2 {
-  font-size: 45px;
+  /* font-size: 45px; */
   font-weight: 700;
   text-align: center;
   margin-top: 48px;

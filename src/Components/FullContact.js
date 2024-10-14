@@ -2,15 +2,16 @@ import { Container, Row, Col, Nav, Tab , NavLink , NavItem , Button , TabContent
 import colorSharp2 from "../Assets/Pics/color-sharp2.png";
 import { useNavigate } from "react-router-dom";
 
-export const Contact = () => {
+export const Contact2 = () => {
+
     const  navigate = useNavigate();
     const handleClick = () => {
-        navigate('/FullContact'); // Redirects to the /details route
+        navigate('/'); // Redirects to the /details route
       };
   
 
     return (
-        <section className="project" id="project" dir="rtl" style={{marginBottom : "43px"}}>
+        <section className="fullproject" id="fullproject" dir="rtl" style={{marginBottom : "43px"}}>
             <Container>
                 <Row>
                     <Col>
@@ -24,7 +25,7 @@ export const Contact = () => {
                             
                         }}>
                         <div className="contacts">
-                            {/* <h1 className="tittle">للاتصال بالمركز</h1> */}
+                            <h1 className="tittle">للاتصال بالمركز</h1>
                             <table >
                                 <tbody>
                                     {/* <th>مكتب قائد المركز  </th>
@@ -63,7 +64,7 @@ export const Contact = () => {
                                         </td>
                                     </tr>
 
-                                    {/* <th> الاستخدام الصوتي</th>
+                                    <th> الاستخدام الصوتي</th>
                                     <tr>
                                         <td>
                                             سنترال :
@@ -81,17 +82,17 @@ export const Contact = () => {
                                         <td>
                                             241431716
                                         </td>
-                                    </tr> */}
-                                    {/* <tr>
+                                    </tr>
+                                    <tr>
                                         <td>
                                             استراتيجي :
                                         </td>
                                         <td>
                                             2802344
                                         </td>
-                                    </tr> */}
+                                    </tr>
 
-                                    {/* <th> هاتف الشبكه</th>
+                                    <th> هاتف الشبكه</th>
                                     <tr>
                                         <td>
                                             سنترال :
@@ -99,21 +100,21 @@ export const Contact = () => {
                                         <td>
                                             700551
                                         </td>
-                                    </tr> */}
-                                    {/* <tr>
+                                    </tr>
+                                    <tr>
                                         <td>
                                             استراتيجي :
                                         </td>
                                         <td>
                                             8005
                                         </td>
-                                    </tr> */}
-                                    {/* <th> مكتب تلقي بلاغات الاعطال</th>
+                                    </tr>
+                                    <th> مكتب تلقي بلاغات الاعطال</th>
                                     <tr>
                                         <td>
                                             24159281
                                         </td>
-                                    </tr> */}
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -162,7 +163,7 @@ export const Contact = () => {
 
                                     <tr>
                                         <td>
-                                            مساعد أ / جابر ابراهيم جابر الشناوي :
+                                            مساعد أ / جابر ابراهيم جابر  :
                                         </td>
                                         <td>
                                             227
@@ -329,7 +330,7 @@ export const Contact = () => {
             </Container>
             {/* <img src={colorSharp2} className="background-image-right" alt="img"></img> */}
             <div className="BackButton">
-          <button onClick={handleClick}>المزيد</button>
+          <button onClick={handleClick}>رجوع</button>
         </div>
         </section>
     )

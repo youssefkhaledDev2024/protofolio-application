@@ -5,8 +5,12 @@
   box-sizing: border-box;
 }
 
-$card-width: 320px;
-/* $border-radius: 7px; */
+:root {
+  --card-width: 320px;
+  --border-radius: 11px;
+  /* --background-color: #fff;
+  --text-color2: #ffffff; */
+}
 
 body {
   background: #bbdefb;
@@ -15,50 +19,66 @@ body {
 
 .cards {
   background: var(--background-color);
-  width: fit-content;
-  border-radius: 11px;
-  cursor: pointer;
-  transition: 0.2s ease;
+  width: var(--card-width);
+  border-radius: var(--border-radius);
+  cursor:pointer ;
+  transition: 0.3s ease; /* Smooth transition for hover */
   padding: 11px;
   margin: 19px;
   flex-basis: 30%;
+
   &:hover {
-    box-shadow: var(--background-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Fix box-shadow */
     transform: scale(1.03);
   }
+
   img {
-    width: $card-width;
-    border-top-left-radius: $border-radius;
-    border-top-right-radius: $border-radius;
+    width: 100%;
+    height: auto;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
     user-drag: none;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-drag: none;
     -webkit-user-select: none;
     -ms-user-select: none;
+    
+    /* Zoom effect */
+    cursor: zoom-in; /* Indicate image is clickable */
+    transition: transform 0.3s ease; /* Smooth transition for zoom */
+  }
+
+  img.zoomed {
+    transform: scale(2); /* Zoom in the image */
+    cursor: zoom-out; /* Indicate image is zoomed */
   }
 
   footer {
     display: flex;
-    width: $card-width;
+    width: 100%;
     align-items: center;
     padding: 10px 3px;
     color: black;
     justify-content: space-between;
+
     h2 {
       font-weight: 400;
-      margin-bottom: 56px;
-      font-size: 12px;
+      margin-bottom: 0; /* Remove excessive margin */
+      font-size: 11px; /* Adjust font size */
     }
 
     p {
-      background: var( --button-background-color);
+      background: var(--button-background-color);
       margin-right: 10px;
       padding: 7px;
       border-radius: 5px;
       width: 100px;
       text-align: center;
       color: var(--text-color2);
+      cursor: pointer;
     }
   }
 }
@@ -68,4 +88,5 @@ body {
   justify-content: space-around;
   width: 100%;
   margin-top: 20px;
+  flex-wrap: wrap; /* Ensure responsive behavior */
 }

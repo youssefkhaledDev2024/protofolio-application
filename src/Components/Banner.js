@@ -11,7 +11,8 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "مركز التأمين الفني", "لمنظومة الامداد الالي", "و السيطرة علي المخزون"];
+  // const toRotate = [ "مركز التأمين الفني", "لمنظومة الامداد الالي", "و السيطرة علي المخزون"];
+  const toRotate = ["مركز التأمين الفني لمنظومة الامداد الآلي والسيطرة على المخزون"];
   const period = 2000;
 
   useEffect(() => {
@@ -55,7 +56,7 @@ export const Banner = () => {
             <div className="text-content">
               {/* <span className="tagline">MMC</span> */}
               <h1>
-                <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "مركز التأمين الفني", "لمنظومه الامداد الالي", "و السيطره علي المخزون" ]'>
+                <span className="txt-rotate" dataPeriod="100" data-rotate='[ "مركز التأمين الفني", "لمنظومه الامداد الالي", "و السيطره علي المخزون" ]'>
                   <span className="wrap">{text}</span>
                 </span>
               </h1>
