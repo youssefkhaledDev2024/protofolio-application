@@ -26,6 +26,7 @@
     text-align: right; /* Align header text to the right for RTL */
     position: relative; /* Relative positioning for the close button */
     font-weight: bold;
+  
 }
 
 /* Style the close button */
@@ -79,4 +80,15 @@
     transform: perspective(10px);
     margin-left: -236px;
     margin-top: -103px;
+}
+
+.body_content{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+.preview{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }

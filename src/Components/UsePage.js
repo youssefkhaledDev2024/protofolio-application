@@ -3,9 +3,7 @@ import colorSharp2 from "../Assets/Pics/color-sharp2.png";
 import Card from "./Card";
 import { useNavigate } from "react-router-dom";
 import inventory from "../Assets/Pics/InventoryManagment.jpeg"
-
-
-
+import pdf from "../Assets/Pics/JSEC_Volume 49_Issue 1_Pages 451-500.pdf"
 
 export const UsePage = () => {
 
@@ -36,7 +34,8 @@ export const UsePage = () => {
               <Card
                 src={inventory}
                 title="كيفيه الدخول علي MMC"
-                link="اضغط هنا"
+                link={"../Assets/Pics/Interferometer_animation.mp4"}
+                pdfPath={pdf}
                 style={{
                   flex: "1 1 30%", // Each card takes 30% of the parent's width
                   marginBottom: "20px", // Space below each card
@@ -118,7 +117,6 @@ export const UsePage = () => {
 
               <Card
                 src={inventory}
-
                 title="دورة الاضافة الداخلية"
                 link="اضغط هنا"
               ></Card>

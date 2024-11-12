@@ -1,10 +1,15 @@
 import { useState } from "react";
 import "../card.css"
+import ModalCard from "./ModalCard";
 
 
-const Card = ({ src, title, link }) => {
+const Card = ({ src, title, link  , pdfPath }) => {
   const [isZoomed, setIsZoomed] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const handleShow = () => setShowModal(true);
+  const handleClose = () => setShowModal(false);
 
+  console.log(showModal);
   // Toggle the zoom effect on image click
   const handleImageClick = () => {
     setIsZoomed(!isZoomed);
@@ -20,11 +25,11 @@ const Card = ({ src, title, link }) => {
         onClick={handleImageClick}
         style={{ cursor: "pointer" }} // Make it clear the image is clickable
       />
-
         <footer>
           {/* <h2>{title}</h2> */}
-          <p>{title}</p>
+          <p onClick={handleShow}>{title}</p>
         </footer>
+        <ModalCard show={showModal} handleClose={handleClose} Title={title} Vedio={link} pdfPath={pdfPath}/>
       </div>
     );
   };

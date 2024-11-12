@@ -1,8 +1,12 @@
 import { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import "../Modalstyle.css";
+import { FaFilePdf } from 'react-icons/fa';
+import { FaHtml5 } from "react-icons/fa";
+import { MdOutlineTextSnippet } from "react-icons/md";
 
-function ModalCard({ show, handleClose }) {
+
+function ModalCard({ show, handleClose, Title  , video , pdfPath }) {
   return (
     <>
       <Modal
@@ -15,25 +19,32 @@ function ModalCard({ show, handleClose }) {
           <button className="custom-close-button" onClick={handleClose}>
             ×
           </button>
-          <Modal.Title id="example-custom-modal-styling-title" className="text-end"> {/* Align title to the right */}
-            قسم إنتاج و تطوير و صيانه البرمجيات
+          <Modal.Title id="example-custom-modal-styling-title h1" className="text-end" style={{fontSize:"15px"}}>
+            {Title}
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <p>
-            دراسه و تحليل دورات العمل بالمنظومه لدرجها بخطه تطوير التطبيقات -
-            <br />
-            انتاج الاصدارات الجديده من التطبيقات بشكل دوري-
-            <br />
-            عمل تحديث و تعديلات للتطبيقات بشكل دوري -
-            <br />
-            انشاء تقارير تساعد المستخدم و متخدذي القرار -
-            <br />
-            انشاء الوثائق الفنيه الخاصه بالتطبيقات -
-            <br />
-            المتابيعه الدوريه للتطبيقات -
-            <br />
-          </p>
+
+        <div className='body_content'>
+            <div>
+              <video width="400" height={200} controls>
+                <source src={video} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div className='preview'>
+              <a href={pdfPath} target="_blank" rel="noopener noreferrer">
+                <FaFilePdf size={30} color="red" />
+              </a>
+              <a href={pdfPath} target="_blank" rel="noopener noreferrer">
+                <FaHtml5 size={30} color="red" />
+              </a>
+              <a href={pdfPath} target="_blank" rel="noopener noreferrer">
+                <MdOutlineTextSnippet size={30} color="red" />
+              </a>
+            </div>
+          </div>
+
         </Modal.Body>
       </Modal>
     </>

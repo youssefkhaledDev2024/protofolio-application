@@ -37,8 +37,8 @@ export const AboutPage = () => {
               >
                 <div className="Aboutcard" dir="rtl">
                   <img src={nozm} alt="img"></img>
-                  <div className="AboutTittle">
-                    ١- نبذه تاريخيه عن مركز التأمين الفني
+                  <div className="AboutTittle">   
+                     نبذه تاريخيه عن مركز التأمين الفني  :
                   </div>
                   <p className="AboutDescription">
                     قام الجانب الأمريكي بإداره الإمداد الألى و السيطرة علي
@@ -53,9 +53,79 @@ export const AboutPage = () => {
                   </p>
                 </div>
 
+                <h2>شهادات الجودة الحاصل عليها المركز</h2>
+              <div
+                style={{
+                  justifycontent: "space-around" /* Space out the divs */,
+                  backgroundcolor:
+                    "#f4f4f4" /* Background color for the container */,
+                  padding: "20px",
+                  borderradius: "8px",
+                }}
+              >
                 <div className="Aboutcard" dir="rtl">
                 <img src={nozm} alt="img"></img>
-                  <div className="AboutTittle">٢- تعريف المنظومه </div>
+                <h1>شهادة الجودة العالمية CMMI</h1>
+                  <div className="AboutDescriptionWithimg">
+                    <img src={cmmi_1} alt="img1"></img>
+                    <p className="AboutDescription">
+                      تعتبر شهادة الجودة العالمية (CMMI) Cabablity Maturity Model Integration مقياسا عالميا لافضل ممارسالت الصناعه لتطوير البرمجيات
+                      , و يأتي حصول المركز علي هذة الشهادة كإعتراف بإنشطة هندسة برمجيات و نظم مركز التأمين الفني MMC و التي تعتمد علي الفحوصات و التقييمات الموسعة
+                      التي يقوم بها معهد SEI لهندسة البرمجيات و هو يعتبر جهة تقييم رائدة و معتمدة و مستقلة .
+                      <br />
+                      <br />
+                      و في اطار حرص المركز علي تقديم حلول إالكترونيه ذات مستوى عالي , فقد تم أستخدام هذا المنهج لتحقيق
+                      الأمتياز في إنتاج البرمجيات بالمركز للمشاريع الحالية و المستقبلية , مما يجعل شهادة CMMI مؤشرا قويا علي مستوي مهنية
+                      و احتراف تقدم عمليات هندسه البرمجيات الخاصة بالمركز .
+
+                    </p>
+                  </div>
+
+                  <br></br>
+                  <br></br>
+                  <br></br>
+
+
+                  <h1>شهادة الجودة العالمية لأنتاج البرمجيات المستوى الثاني لعام 2008 (CMMI_Dev/2)</h1>
+                  <div className="AboutDescriptionWithimg">
+                    <img src={cmmi_2} alt="img1"></img>
+                    <p className="AboutDescription">
+                   حصل مركز التأمين الفني لمنظومة الأمداد الألي و السيطره علي المخزون التابع لإدارة النظم و المعلومات 
+                   القوات المسلحة علي شهادة الجودة العالمية لإنتاج البرمجيات المستوى الثانى , و يعتبر المركز اول جهة حكومية تحصل علي الشهادة علي مستوى جمهورية مصر العربية و الشرق الاوسط
+
+                    </p>
+                  </div>
+
+                  <h1>شهادة الجودة العالمية لأنتاج البرمجيات المستوى الثالث لعام 2010 (CMMI_Dev/3)</h1>
+
+                  <div className="AboutDescriptionWithimg">
+                    <img src={cmmi_3} alt="img1"></img>
+                    <p className="AboutDescription">
+                   حصل مركز التأمين الفني لمنظومة الأمداد الألي و السيطره علي المخزون التابع لإدارة النظم و المعلومات 
+                   القوات المسلحة علي شهادة الجودة العالمية لإنتاج البرمجيات المستوى الثالث , و يعتبر المركز اول جهة حكومية تحصل علي الشهادة علي مستوى جمهورية مصر العربية و الشرق الاوسط
+
+                    </p>
+                  </div>
+
+                  <h1>شهادة الجودة العالمية للخدمات المعلوماتية المستوى الثاني لعام 2014 (CMMI-SVC/2)</h1>
+
+                  <div className="AboutDescriptionWithimg">
+                    <img src={cmmi_4} alt="img1"></img>
+                    <p className="AboutDescription">
+                   حصل مركز التأمين الفني لمنظومة الأمداد الألي و السيطره علي المخزون التابع لإدارة النظم و المعلومات 
+                   القوات المسلحة علي شهادة الجودة العالمية للخدمات المعلوماتيه المستوى الثانى , و يعتبر المركز اول جهة حكومية تحصل علي الشهادة علي مستوى جمهورية مصر العربية و الشرق الاوسط
+ 
+                    </p>
+                  </div>
+
+                </div>
+              </div>
+
+
+
+                <div className="Aboutcard" dir="rtl">
+                <img src={nozm} alt="img"></img>
+                  <div className="AboutTittle">  تعريف المنظومه  : </div>
                   <p className="AboutDescription">
                     تعتبر منظومة الإمداد الألي و السيطره علي المخزون بالقوات
                     المسلحة نظام متكامل للسيطره علي الأتي :<br></br>- دوره
@@ -72,7 +142,7 @@ export const AboutPage = () => {
 
                 <div className="Aboutcard" dir="rtl">
                   <img src={nozm} alt="img"></img>
-                  <div className="AboutTittle">٣- عناصر المنظومه </div>
+                  <div className="AboutTittle"> عناصر المنظومه  :</div>
 
                   <div className="ItemsImage">
                     <img src={army} alt="img"></img>
@@ -82,7 +152,7 @@ export const AboutPage = () => {
                 <div className="Aboutcard" dir="rtl">
                 <img src={nozm} alt="img"></img>
 
-                  <div className="AboutTittle">٤- تعريف المنظومه </div>
+                  <div className="AboutTittle">  الغرض من المنظومه   : </div>
                   <p className="AboutDescription">
                     - ميكنه دورات العمل المستندية اليدوية (الإضافة / الخصم /
                     الجرد /الإصلاح / التكهين) و ذلك توفيرا للوقت و الجهد و
@@ -187,73 +257,7 @@ export const AboutPage = () => {
               </div>
 
               
-              <h2>شهادات الجودة الحاصل عليها المركز</h2>
-              <div
-                style={{
-                  justifycontent: "space-around" /* Space out the divs */,
-                  backgroundcolor:
-                    "#f4f4f4" /* Background color for the container */,
-                  padding: "20px",
-                  borderradius: "8px",
-                }}
-              >
-                <div className="Aboutcard" dir="rtl">
-                <img src={nozm} alt="img"></img>
-                <h1>شهادة الجودة العالمية CMMI</h1>
-                  <div className="AboutDescriptionWithimg">
-                    <img src={cmmi_1} alt="img1"></img>
-                    <p className="AboutDescription">
-                      تعتبر شهادة الجودة العالمية (CMMI) Cabablity Maturity Model Integration مقياسا عالميا لافضل ممارسالت الصناعه لتطوير البرمجيات
-                      , و يأتي حصول المركز علي هذة الشهادة كإعتراف بإنشطة هندسة برمجيات و نظم مركز التأمين الفني MMC و التي تعتمد علي الفحوصات و التقييمات الموسعة
-                      التي يقوم بها معهد SEI لهندسة البرمجيات و هو يعتبر جهة تقييم رائدة و معتمدة و مستقلة .
-                      <br />
-                      <br />
-                      و في اطار حرص المركز علي تقديم حلول إالكترونيه ذات مستوى عالي , فقد تم أستخدام هذا المنهج لتحقيق
-                      الأمتياز في إنتاج البرمجيات بالمركز للمشاريع الحالية و المستقبلية , مما يجعل شهادة CMMI مؤشرا قويا علي مستوي مهنية
-                      و احتراف تقدم عمليات هندسه البرمجيات الخاصة بالمركز .
-
-                    </p>
-                  </div>
-
-                  <br></br>
-                  <br></br>
-                  <br></br>
-
-
-                  <h1>شهادة الجودة العالمية لأنتاج البرمجيات المستوى الثاني لعام 2008 (CMMI_Dev/2)</h1>
-                  <div className="AboutDescriptionWithimg">
-                    <img src={cmmi_2} alt="img1"></img>
-                    <p className="AboutDescription">
-                   حصل مركز التأمين الفني لمنظومة الأمداد الألي و السيطره علي المخزون التابع لإدارة النظم و المعلومات 
-                   القوات المسلحة علي شهادة الجودة العالمية لإنتاج البرمجيات المستوى الثانى , و يعتبر المركز اول جهة حكومية تحصل علي الشهادة علي مستوى جمهورية مصر العربية و الشرق الاوسط
-
-                    </p>
-                  </div>
-
-                  <h1>شهادة الجودة العالمية لأنتاج البرمجيات المستوى الثالث لعام 2010 (CMMI_Dev/3)</h1>
-
-                  <div className="AboutDescriptionWithimg">
-                    <img src={cmmi_3} alt="img1"></img>
-                    <p className="AboutDescription">
-                   حصل مركز التأمين الفني لمنظومة الأمداد الألي و السيطره علي المخزون التابع لإدارة النظم و المعلومات 
-                   القوات المسلحة علي شهادة الجودة العالمية لإنتاج البرمجيات المستوى الثالث , و يعتبر المركز اول جهة حكومية تحصل علي الشهادة علي مستوى جمهورية مصر العربية و الشرق الاوسط
-
-                    </p>
-                  </div>
-
-                  <h1>شهادة الجودة العالمية للخدمات المعلوماتية المستوى الثاني لعام 2014 (CMMI-SVC/2)</h1>
-
-                  <div className="AboutDescriptionWithimg">
-                    <img src={cmmi_4} alt="img1"></img>
-                    <p className="AboutDescription">
-                   حصل مركز التأمين الفني لمنظومة الأمداد الألي و السيطره علي المخزون التابع لإدارة النظم و المعلومات 
-                   القوات المسلحة علي شهادة الجودة العالمية للخدمات المعلوماتيه المستوى الثانى , و يعتبر المركز اول جهة حكومية تحصل علي الشهادة علي مستوى جمهورية مصر العربية و الشرق الاوسط
- 
-                    </p>
-                  </div>
-
-                </div>
-              </div>
+             
             </Col>
           </Row>
         </Container>

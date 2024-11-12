@@ -55,10 +55,11 @@ export const NavBar = () => {
           <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
                   <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => handleClick('/')}>الرئيسيه</Nav.Link>
-                  <Nav.Link href="#skill" className={activeLink === 'skill' ? 'active navbar-link' : 'navbar-link'} onClick={() => handleClick("/skill")}>الأدوات و البرامج</Nav.Link>
+                 
                   {/* <Nav.Link href="#sections" className={activeLink === 'sections' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('sections')}>أقسام المركز</Nav.Link> */}
                   <Nav.Link href="#UsePage" className={activeLink === 'UsePage' ? 'active navbar-link' : 'navbar-link'} onClick={ () => handleClick('/use')}>دليل المستخدم</Nav.Link>
                   <Nav.Link href="#AboutPage" className={activeLink === 'AboutPage' ? 'active navbar-link' : 'navbar-link'} onClick={() => handleClick('/about')}>عن المركز </Nav.Link>
+                   <Nav.Link href="#skill" className={activeLink === 'skill' ? 'active navbar-link' : 'navbar-link'} onClick={() => handleClick("/skill")}>الأدوات و البرامج</Nav.Link>
 
                   {/* <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>المشروعات الحاليه</Nav.Link> */}
                   {/* <Nav.Link href="#leaders" className={activeLink === 'leaders' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('leaders')}>اعرف قادتك</Nav.Link> */}
