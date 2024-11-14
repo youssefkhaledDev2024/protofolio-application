@@ -1,34 +1,34 @@
-import { Container, Row, Col, Nav, Tab , NavLink , NavItem , Button , TabContent , TabPane , CardBody , Card , CardTitle , CardText , } from "react-bootstrap";
+import { Container, Row, Col, Nav, Tab, NavLink, NavItem, Button, TabContent, TabPane, CardBody, Card, CardTitle, CardText, } from "react-bootstrap";
 import colorSharp2 from "../Assets/Pics/color-sharp2.png";
 import { useNavigate } from "react-router-dom";
 import Accordion from 'react-bootstrap/Accordion';
 
 export const Contact = () => {
-    const  navigate = useNavigate();
+    const navigate = useNavigate();
     const handleClick = () => {
         navigate('/FullContact'); // Redirects to the /details route
-      };
-  
+    };
+
 
     return (
-        <section className="project" id="project" dir="rtl" style={{marginBottom : "43px"}}>
+        <section className="project" id="project" dir="rtl" style={{ marginBottom: "43px" }}>
             <Container>
                 <Row>
                     <Col>
                         <h2>اتصل بنا</h2>
                         <div style={{
-                            display: "flex", 
+                            display: "flex",
                             justifycontent: "space-around",/* Space out the divs */
                             backgroundcolor: "#f4f4f4", /* Background color for the container */
                             padding: "20px",
                             borderradius: "8px"
-                            
+
                         }}>
-                        <div className="contacts">
-                            {/* <h1 className="tittle">للاتصال بالمركز</h1> */}
-                            <table >
-                                <tbody>
-                                    {/* <th>مكتب قائد المركز  </th>
+                            <div className="contacts">
+                                {/* <h1 className="tittle">للاتصال بالمركز</h1> */}
+                                <table >
+                                    <tbody>
+                                        {/* <th>مكتب قائد المركز  </th>
                                     <tr>
                                         <td>
                                             سنترال :
@@ -46,25 +46,25 @@ export const Contact = () => {
                                         </td>
                                     </tr> */}
 
-                                    <th> التحويله</th>
-                                    <tr>
-                                        <td>
-                                            سنترال :
-                                        </td>
-                                        <td>
-                                            24159281
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            استراتيجي :
-                                        </td>
-                                        <td>
-                                            2803878
-                                        </td>
-                                    </tr>
+                                        <th> التحويله</th>
+                                        <tr>
+                                            <td>
+                                                سنترال :
+                                            </td>
+                                            <td>
+                                                24159281
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                استراتيجي :
+                                            </td>
+                                            <td>
+                                                2803878
+                                            </td>
+                                        </tr>
 
-                                    {/* <th> الاستخدام الصوتي</th>
+                                        {/* <th> الاستخدام الصوتي</th>
                                     <tr>
                                         <td>
                                             سنترال :
@@ -83,7 +83,7 @@ export const Contact = () => {
                                             241431716
                                         </td>
                                     </tr> */}
-                                    {/* <tr>
+                                        {/* <tr>
                                         <td>
                                             استراتيجي :
                                         </td>
@@ -92,7 +92,7 @@ export const Contact = () => {
                                         </td>
                                     </tr> */}
 
-                                    {/* <th> هاتف الشبكه</th>
+                                        {/* <th> هاتف الشبكه</th>
                                     <tr>
                                         <td>
                                             سنترال :
@@ -101,7 +101,7 @@ export const Contact = () => {
                                             700551
                                         </td>
                                     </tr> */}
-                                    {/* <tr>
+                                        {/* <tr>
                                         <td>
                                             استراتيجي :
                                         </td>
@@ -109,16 +109,16 @@ export const Contact = () => {
                                             8005
                                         </td>
                                     </tr> */}
-                                    {/* <th> مكتب تلقي بلاغات الاعطال</th>
+                                        {/* <th> مكتب تلقي بلاغات الاعطال</th>
                                     <tr>
                                         <td>
                                             24159281
                                         </td>
                                     </tr> */}
-                                </tbody>
-                            </table>
-                        </div>
-                        {/* <div className="contacts">
+                                    </tbody>
+                                </table>
+                            </div>
+                            {/* <div className="contacts">
                             <h1 className="tittle">ارقام هواتف الشبكه داخل المركز </h1>
                             <table >
                                 <tbody>
@@ -287,7 +287,7 @@ export const Contact = () => {
                             </table>
                         </div> */}
 
-                        {/* <div className="contacts">
+                            {/* <div className="contacts">
                             <h1 className="tittle">ارقام هواتف الشبكه للوحدات العامله بمنظومه MMC </h1>
                             <table >
                                 <tbody>
@@ -324,34 +324,24 @@ export const Contact = () => {
                             </table>
                             </div> */}
 
-                        </div>       
-
-                        <Accordion defaultActiveKey="0">
-      <Accordion.Item eventKey="0">
-        <Accordion.Header>Accordion Item #1</Accordion.Header>
-        <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="1">
-        <Accordion.Header>Accordion Item #2</Accordion.Header>
-        <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </Accordion.Body>
-      </Accordion.Item>
-    </Accordion>
+                        </div>
+                        
+                        <Accordion defaultActiveKey="0" style={{margin:"30px"}}>
+                            <h3 style={{margin:"5px" , opacity:"1"}}>الاسئله الأكثر شيوعا</h3>
+                            <Accordion.Item eventKey="0" style={{marginTop:"20px"}}>
+                                <Accordion.Header >خطأ في تسجيل الدخول للمنظومه أثناء كتابه أسم المستخدم و كلمه المرور</Accordion.Header>
+                                <Accordion.Body style={{margin:"5px"}}>
+                                    1) التأكد من أن الكتابه باللغه الإنجليزيه و أن زر Capslock ليس مفعل<br/>
+                                    2)عند كتابه كلمه المرور أكثر من مره خطأ يتم غلق المنظومة في هذه يجب التواصل مع المركز و إرسال مندوب لإستلام كلمه مرور جديدة
+                                </Accordion.Body>
+                            </Accordion.Item>
+                            <Accordion.Item eventKey="1">
+                                <Accordion.Header>السؤال الثاني</Accordion.Header>
+                                <Accordion.Body>
+                                    إجابه السؤال الثاني 
+                                </Accordion.Body>
+                            </Accordion.Item>
+                        </Accordion>
 
 
                     </Col>
@@ -359,8 +349,8 @@ export const Contact = () => {
             </Container>
             {/* <img src={colorSharp2} className="background-image-right" alt="img"></img> */}
             <div className="BackButton">
-          <button onClick={handleClick}>المزيد</button>
-        </div>
+                <button onClick={handleClick}>المزيد</button>
+            </div>
         </section>
     )
 }

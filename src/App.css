@@ -136,10 +136,28 @@ nav.navbar.scrolled {
   text-align: center; /* Center text within each link */
   direction: rtl; /* Ensure the text direction is right-to-left */
 }
-nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
-nav.navbar .navbar-nav a.nav-link.navbar-link.active {
-    opacity: 1;
+/* Base style for navigation links */
+.navbar-link {
+  padding: 8px 16px;  /* Add some padding for spacing */
+  color: #fff;  /* Text color */
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
+
+/* Active link style */
+.navbar-link.active {
+  background-color: #696969; /* Set background for active link */
+  color: #fff; /* Text color for active link */
+  border-radius: 4px; /* Optional rounded corners */
+}
+
+/* Hover effect for navigation links */
+.navbar-link:hover {
+  background-color: rgba(0, 0, 0, 0.247); /* Darkened background on hover */
+  color: #f0f0f0; /* Lighten text color slightly on hover */
+  border-radius: 4px; /* Optional rounded corners on hover */
+}
+
 span.navbar-text {
     display: flex;
     align-items: center;
@@ -283,9 +301,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  transition: .4s;
+  transition: background-color 0.4s;
+  border-radius: 34px;
 }
 
+/* The thumb */
 .slider:before {
   position: absolute;
   content: "";
@@ -294,27 +314,54 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   left: 4px;
   bottom: 4px;
   background-color: white;
-  transition: .4s;
+  transition: transform 0.4s;
+  border-radius: 50%;
 }
 
 /* When checked, change background color */
 input:checked + .slider {
-  background-color:var(--card-background-color); /* Light mode color */
+  background-color: var(--card-background-color); /* Light mode color */
 }
 
-/* Move the slider to the right */
+/* Move the slider thumb to the right when checked */
 input:checked + .slider:before {
   transform: translateX(26px);
 }
 
-/* Rounded slider */
-.slider.round {
-  border-radius: 34px;
+/* Icon positioning */
+.sun-icon, .moon-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #fff;
+  transition: opacity 0.4s;
 }
 
-.slider.round:before {
-  border-radius: 50%;
+/* Position sun icon on the left */
+.sun-icon {
+  left: 10px;
+  opacity: 0;
+  color :yellow
 }
+
+/* Position moon icon on the right */
+.moon-icon {
+  right: 10px;
+  opacity: 0;
+  color: black;
+}
+
+/* Show the sun icon in light mode */
+input:checked + .slider .sun-icon {
+  opacity: 1;
+}
+
+/* Show the moon icon in dark mode */
+input:not(:checked) + .slider .moon-icon {
+  opacity: 1;
+}
+
 
 /* ********  end of navbar css********** */
 
@@ -330,6 +377,7 @@ input:checked + .slider:before {
   direction: rtl; /* Ensure the entire banner follows RTL direction */
   text-align: right; /* Align text to the right */
   border-radius: 34px;
+  margin-bottom: 10px;
 }
 
 .banner-content {

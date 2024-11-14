@@ -2,7 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import colorSharp2 from "../Assets/Pics/color-sharp2.png";
 import Card from "./Card";
 import { useNavigate } from "react-router-dom";
-import inventory from "../Assets/Pics/InventoryManagment.jpeg"
+import inventory from "../Assets/Pics/InventoryManagmentold.jpeg"
 import pdf from "../Assets/Pics/JSEC_Volume 49_Issue 1_Pages 451-500.pdf"
 
 export const UsePage = () => {
@@ -13,6 +13,29 @@ export const UsePage = () => {
     navigate('/'); // Redirects to the /details route
   };
 
+//   //This convert a pdf file to text
+//   const fs = require('fs');
+//   const pdfParse = require('pdf-parse');
+  
+//   async function convertPdfToText(filePath) {
+//       const dataBuffer = fs.readFileSync(filePath);
+//       const data = await pdfParse(dataBuffer);
+//       return data.text;  // This is the plain text content of the PDF
+//   }
+  
+//   // Example usage:
+//   convertPdfToText('path/to/instruction.pdf')
+//       .then(text => fs.writeFileSync('instruction.txt', text))
+//       .catch(error => console.error("Error converting PDF to text:", error));
+
+//  // And this conver text to HTML
+//   function convertTextToHtml(text)
+//    {
+//     const htmlContent = text.replace(/\n/g, '<br>'); // Simple line break replacement
+//     return `<div>${htmlContent}</div>`;
+//     }
+
+  
 
 
   return (
@@ -34,7 +57,7 @@ export const UsePage = () => {
               <Card
                 src={inventory}
                 title="كيفيه الدخول علي MMC"
-                link={"../Assets/Pics/Interferometer_animation.mp4"}
+                link="../Assets/Pics/Interferometer_animation.mp4"
                 pdfPath={pdf}
                 style={{
                   flex: "1 1 30%", // Each card takes 30% of the parent's width

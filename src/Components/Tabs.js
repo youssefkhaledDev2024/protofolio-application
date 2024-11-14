@@ -201,7 +201,7 @@ const Tabs = () => {
         {currentTab !== -1 && (
           <React.Fragment>
             {/* Always render "الافرع التابعه له" */}
-            <h3 style={{color:"red" , padding:"10px"}}>الافرع التابعه له</h3>
+            <h3 style={{color:"red" , padding:"10px"}}>{data[currentTab].name}<br/><br/>الافرع التابعه له</h3>
             <div>
               {data[currentTab].bransh.split('\n').map((line, index) => (
                 <p style={{color:"black"}} key={index}>{line}</p>

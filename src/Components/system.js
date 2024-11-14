@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Card from "./Card";
-import SysytemCard from "./SystemCards";
-import inventory from "../Assets/Pics/InventoryManagment.jpeg"
+import SystemCard from "./SystemCards";
+import inventory from "../Assets/Pics/InventoryManagment.png"
 import Dashboard from "../Assets/Pics/Dashboard.jpg"
 import inv_audit from "../Assets/Pics/inventory-audit.jpg"
 import matrokat from "../Assets/Pics/matrokat.jpg"
@@ -26,7 +26,7 @@ export const Systems = () => {
 
               }}
             >
-              <SysytemCard
+              <SystemCard
                 src={inventory}
                 title=" منظومة الامداد الألي و السيطرة علي المخزون"
                 link="اضغط هنا"
@@ -35,8 +35,8 @@ export const Systems = () => {
                   marginBottom: "20px", // Space below each card
                   boxSizing: "border-box", // Include padding in width calculation
                 }}
-              ></SysytemCard>
-              <SysytemCard
+              ></SystemCard>
+              <SystemCard
                 style={{
                   flex: "1 1 30%", // Each card takes 30% of the parent's width
                   marginBottom: "20px", // Space below each card
@@ -45,9 +45,9 @@ export const Systems = () => {
                 src={inv_audit}
                 title=" منظومة مراقبة العهدة"
                 link="اضغط هنا"
-              ></SysytemCard>
+              ></SystemCard>
 
-              <SysytemCard
+              <SystemCard
                 style={{
                   flex: "1 1 30%", // Each card takes 30% of the parent's width
                   marginBottom: "20px", // Space below each card
@@ -56,9 +56,9 @@ export const Systems = () => {
                 src={warehaouse}
                 title=" منظومة تدبير الأحتياجات     "
                 link="اضغط هنا"
-              ></SysytemCard>
+              ></SystemCard>
 
-              <SysytemCard
+              <SystemCard
                 style={{
                   flex: "1 1 30%", // Each card takes 30% of the parent's width
                   marginBottom: "20px", // Space below each card
@@ -67,9 +67,9 @@ export const Systems = () => {
               src={matrokat}
                 title=" منظومة المتروكات     "
                 link="اضغط هنا"
-              ></SysytemCard>
+              ></SystemCard>
 
-              <SysytemCard
+              <SystemCard
                 style={{
                   flex: "1 1 30%", // Each card takes 30% of the parent's width
                   marginBottom: "20px", // Space below each card
@@ -78,7 +78,7 @@ export const Systems = () => {
                 src={Dashboard}
                 title=" لوحة القيادة      "
                 link="اضغط هنا"
-              ></SysytemCard>
+              ></SystemCard>
 
             </div>
           </Col>

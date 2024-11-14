@@ -4,6 +4,7 @@ import "../Modalstyle.css";
 import { FaFilePdf } from 'react-icons/fa';
 import { FaHtml5 } from "react-icons/fa";
 import { MdOutlineTextSnippet } from "react-icons/md";
+import vedio from '../Assets/Pics/vedio.mp4'
 
 
 function ModalCard({ show, handleClose, Title  , video , pdfPath }) {
@@ -27,9 +28,8 @@ function ModalCard({ show, handleClose, Title  , video , pdfPath }) {
 
         <div className='body_content'>
             <div>
-              <video width="400" height={200} controls>
-                <source src={video} type="video/mp4" />
-                Your browser does not support the video tag.
+              <video src={vedio}  width="400" height={200} controls>
+             
               </video>
             </div>
             <div className='preview'>

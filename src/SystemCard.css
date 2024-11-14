@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-$card-width: 320px;
+
 /* $border-radius: 7px; */
 
 body {
@@ -37,11 +37,17 @@ body {
     -webkit-user-drag: none;
     -webkit-user-select: none;
     -ms-user-select: none;
+    cursor: zoom-in; /* Indicate image is clickable */
+    transition: transform 0.3s ease;
+  }
+  img.zoomed {
+    transform: scale(1.5); /* Zoom in the image */
+    cursor: zoom-out; /* Indicate image is zoomed */
   }
 
   footer {
     display: flex;
-    width: $card-width;
+    
     align-items: center;
     padding: 0px 2px;
     color: black;

@@ -51,11 +51,14 @@ export const Skills = () => {
                             <p>تحتوي هذه القائمه علي كل الادوات و البرامج المساعده<br></br> يمكنك تحميل البرنامج بالضغط علي الايقونه</p>
                             <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                                 <div className="item">
+                                    <a>
                                     <img 
                                     src={FireFox}
                                      alt="Image"
-                                     onClick={()=>handleClick("https://www.mozilla.org/en-US/firefox/new/")}
-                                     style={{ cursor: 'pointer' }} />
+                                    //  onClick={()=>handleClick("https://www.mozilla.org/en-US/firefox/new/")}
+                                     style={{ cursor: 'pointer' }}        
+                                     />
+                                    </a>            
                                     <h5>FireFox متصفح</h5>
                                 </div>
                                 <div className="item">
